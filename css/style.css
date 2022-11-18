@@ -61,7 +61,9 @@
         }
         
         .bg--base {
-            background-color: #012469 !important;
+            background-color: #012469;
+            align-items: center;
+            height: 50px;
         }
         
         .change-language {
@@ -339,6 +341,10 @@
                 background: #fff;
                 color: #0b254a;
             }
+            .bg--base {
+                background-color: none;
+                height: 0;
+            }
         }
         
         .menu-area .menu .submenu li a {
@@ -394,7 +400,7 @@
                 margin-right: -7px;
             }
             .menu-area .menu li a {
-                font-size: 14px;
+                font-size: 16px;
                 padding: 5px;
                 font-weight: 500;
                 color: #fff;
@@ -599,7 +605,7 @@
         }
         
         .category-link-area .cmn--btn {
-            background: #0101b3;
+            background: #012469;
             padding: 0 15px;
             height: 40px;
             color: #000;
@@ -709,6 +715,13 @@
             }
             .category-link-area .category-link>li:first-child>a {
                 border-top: 1px solid rgba(79, 196, 247, 0.2);
+            }
+            .category-link-area .cmn--btn {
+                background: #0101b3!important;
+                padding: 0 15px;
+                height: 40px;
+                color: #000;
+                border-radius: 3px;
             }
         }
         
@@ -975,8 +988,8 @@
         }
         
         .fa-solid {
-            color: #ffff00;
-            font-size: 10px;
+            color: rgb(238, 255, 0);
+            font-size: 16px;
         }
         
         .menu-close .fa-solid {
@@ -988,8 +1001,12 @@
         }
         
         .btn-card {
-            color: #1414e0;
+            color: #042363;
             font-size: 15px;
+        }
+        
+        .btn-card:hover {
+            color: #1414e0;
         }
         
         .card .btn-primary {
@@ -1061,7 +1078,7 @@
         }
         
         .newsletter-text {
-            background: #1414e0;
+            background: #042363;
             flex-basis: 50%;
         }
         
@@ -1250,6 +1267,10 @@
             padding-right: 30px;
         }
         
+        .contact-icons {
+            margin-left: -15px!important;
+        }
+        
         .icon-link .fa-brands {
             color: #1414e0;
             font-size: 40px;
@@ -1320,6 +1341,11 @@
             font-size: 32px;
             margin-right: 10px;
             padding: 2px 0;
+        }
+        
+        .contact-icons i:hover {
+            color: #147ae0;
+            transition: all .5s ease;
         }
         
         .unorder-list {
@@ -1541,7 +1567,7 @@
         }
         
         .button .btn {
-            background: #1414e0;
+            background: #042363;
             color: #fff;
             padding: 1rem 7rem;
             border-radius: 8px;
@@ -1938,6 +1964,11 @@
             border-bottom-right-radius: 40px;
         }
         
+        .category-link li a:hover i {
+            transform: rotate(90deg);
+            transition: all .5s ease;
+        }
+        
         .container .cancel-icon {
             position: absolute;
             top: 10px;
@@ -1956,7 +1987,7 @@
             position: absolute;
             top: 5px;
             right: 10px;
-            font-size: 30px;
+            font-size: 20px!important;
         }
         
         @media (max-width: 468px) {
@@ -1982,6 +2013,11 @@
         
         .cart_img span i:hover {
             color: #1414e0!important;
+        }
+        
+        .heart-icon i:hover {
+            color: #1414e0!important;
+            transition: all .2s ease;
         }
         
         #total .tag-heading {
