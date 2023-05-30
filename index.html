@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 
     <title>Mannie-ac | Ecommerce Site</title>
 
@@ -176,18 +176,22 @@
     <!-- end of navbar -->
 
     <!-- hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="section-hero d-lg-flex align-items-center">
-                <div class="header-text">
-                    <h1 class="text-capitalize fw-bold">Find the perfect<br> commodity in our <br> store.</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore <br>accusantium eius inventore repudiandae laborum harum.</p>
-                    <button type="button" class="btn btn-lg">View Our Store</button>
-                </div>
-                <div class="header-img position-relative">
-                    <img src="images/background.png" class="w-100">
-                </div>
+    <section class="hero d-lg-flex justify-content-between container-fluid">
+        <div class="h-text d-flex flex-column align-items-start container">
+            <div class="text my-5 py-5 position-relative">
+                <h1 class="text-capitalize fw-bold">Find the perfect<br> commodity in our <br> store.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore <br> accusantium eius inventore repudiandae laborum harum.</p>
+                <button type="button" class="btn btn-lg mb-5">View Our Store</button>
             </div>
+        </div>
+        <div class="h-image position-relative mt-3">
+            <img src="images/image1.png" class="w-100 position-absolute">
+            <p class="text-start h-image__text1 bg-white  py-3 px-4 position-absolute ">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="text-start h-image__paragraph bg-white  py-3 px-4 position-absolute ">
+                Lorem ipsum dolor sit amet.
+            </p>
         </div>
     </section>
     <!-- end of hero -->
